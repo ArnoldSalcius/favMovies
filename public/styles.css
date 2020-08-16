@@ -77,6 +77,10 @@ input{
 .movie-list{
     display: flex;
     flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+    background-color: #053f5e;
 }
 
 .movie {
@@ -85,15 +89,41 @@ input{
     margin: 30px;
     width: 20em;
     text-align: center;
-    min-height: 45em;
+    position: relative;
+    padding-bottom: 10em;
 }
+
+.descr {
+    margin: 1em;
+}
+
+
 
 
 .poster {
-    max-width: 80%;
+    max-height: 20em;
+    margin: 0;
+}
+
+
+.icons {
+    margin: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 1em;
+}
+.icons button {
+    background-color: #bfa100;
+    margin: 2em;
+    /* align-self: flex-end; */
+}
+
+.icons button:hover {
+    background-color:#ffd700;
 }
 
 
 
 
-/* Darkest: 022c43 normal: 053f5e lightest: 115173 extra: ffd700*/
+
+/* Darkest: #022c43 normal: 053f5e lightest: 115173 extra: ffd700*/

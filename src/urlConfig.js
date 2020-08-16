@@ -1,7 +1,9 @@
 
 //Default endpoint and API key
 
+export const apiKey = "api_key=c3ea623827488afcf9ac2f105fe6cb9c";
 
+export const searchUrl ="https://api.themoviedb.org/3/search/movie?api_key=c3ea623827488afcf9ac2f105fe6cb9c&query=";
 export const imageUrl = "https://image.tmdb.org/t/p/w500";
 export const baseUrl = "https://api.themoviedb.org/3";
 
