@@ -7,6 +7,11 @@ import FavoriteIcon from '@material-ui/icons/Favorite';
 
 const Movie = CreateClass({
 
+    handleLiked(){
+        console.log(this.props.el);
+        this.props.addMovie(this.props.el);
+    },
+
     render() {
         return (<div className="movie" key={this.props.el.id}>
             <div><h1>{this.props.el.name}</h1></div>
@@ -15,7 +20,7 @@ const Movie = CreateClass({
             <div className="icons">
                 <hr></hr>
 
-                <button><ThumbUpIcon /></button>
+                <button onClick={this.handleLiked}><ThumbUpIcon /></button>
                 <button><FavoriteIcon /></button>
             </div>
 

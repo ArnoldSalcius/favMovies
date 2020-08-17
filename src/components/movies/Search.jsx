@@ -12,8 +12,14 @@ const Search = CreateClass({
         this.setState({searchValue: e.target.value});
     },
     handleSubmit(e){
-
-        this.props.getResults(this.state.searchValue);
+        let res = this.state.searchValue;
+        if(res.length > 2){
+            this.props.getResults(res);
+            this.setState({searchValue: ""});
+        }else{
+            alert("Please enter 3 or more characters in your search!");
+        }
+        
         e.preventDefault();
     },
     

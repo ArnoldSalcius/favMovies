@@ -78,9 +78,10 @@ input{
     display: flex;
     flex-wrap: wrap;
     width: 90%;
-    margin: 0 auto;
+    margin: 10em auto;
     justify-content: center;
     background-color: #053f5e;
+
 }
 
 .movie {
@@ -95,8 +96,17 @@ input{
 
 .descr {
     margin: 1em;
+    
 }
 
+
+.list-title{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    font-size: 2em;
+    color:#ffd700;
+}
 
 
 
