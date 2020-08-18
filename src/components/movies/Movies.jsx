@@ -75,7 +75,7 @@ const Movies = CreateClass({
         <div className = "movies">
             <Search getResults = {this.findMovies} name = {"Arnold"}/>
             <SearchList addMovie={this.addMovie} movieList = {this.state.searchMovies} isResults= {this.state.isResults}></SearchList>
-            <Liked movieList = {this.state.likedMovies}/>
+            <Liked movieList = {this.state.likedMovies} deleteMovie = {this.deleteMovie} addMovie = {this.addMovie}/>
         </div>)
     }
     

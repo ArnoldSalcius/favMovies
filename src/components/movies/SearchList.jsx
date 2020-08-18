@@ -24,7 +24,7 @@ const SearchList = CreateClass({
         return (
             <div className = "movie-list">
                 {
-                    this.props.isResults ? this.props.movieList.map(el => <Movie addMovie = {this.props.addMovie} key={el.id} el={el}/>) : <NoResults />
+                    this.props.isResults ? this.props.movieList.map(el => <Movie type="search" addMovie = {this.props.addMovie} key={el.id} el={el}/>) : <NoResults />
                 }
             </div>
         )
